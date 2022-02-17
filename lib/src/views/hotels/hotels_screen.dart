@@ -57,7 +57,7 @@ class _HotelsScreenState extends State<HotelsScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: baseWhitePlain,
-                      fontSize: 28,
+                      fontSize: 24,
                     ),
                   ),
                 ],

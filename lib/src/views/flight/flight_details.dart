@@ -75,6 +75,10 @@ class _FlightDetailsScreenState extends State<FlightDetailsScreen> {
                         exGroup: _exGroup[index],
                         airline: _airline[index],
                         cities: _cities[index],
+                        c1: _c1[index],
+                        c2: _c2[index],
+                        c3: _c3[index],
+                        c4: _c4[index],
                       );
                     }),
               ),
@@ -127,4 +131,37 @@ class _FlightDetailsScreenState extends State<FlightDetailsScreen> {
     'EMIRATES AIRLINE',
     'EMIRATES AIRLINE',
   ];
+
+  final List<String> _c1 = [
+    'TK 709 \nPC 2738\nPC 2737\nTK 708',
+    'TK 711  \nPC 2738\nPC 2737\nTK 710',
+    'TK 715 \nTK 2012\nTK 2013\nTK 718',
+    'EK  623\nEK  123\nTK 2012\nTK 2013\nEK  122\nEK  122',
+    'EK  623\nEK  123\nTK 2012\nTK 2013\nEK  122\nEK 2102',
+  ];
+
+  final List<String> _c2 = [
+    '21 FEB \n23 FEB\n25 FEB\n28 FEB',
+    '21 FEB \n23 FEB\n25 FEB\n28 FEB',
+    '21 FEB \n23 FEB\n25 FEB\n28 FEB',
+    '21 FEB \n21 FEB\n23 FEB\n25 FEB\n28 FEB\n01 MAR',
+    '21 FEB \n21 FEB\n23 FEB\n25 FEB\n28 FEB\n01 MAR',
+  ];
+
+  final List<String> _c3 = [
+    'KHI IST \nSAW ASR\nASR SAW\nIST KHI ',
+    'ISB IST\nSAW ASR\nASR SAW\nIST ISB',
+    'LHE IST\nIST ASR\nASR IST\nIST LHE ',
+    'LHE DXB\nDXB IST\nIST ASR \nASR IST \nIST DXB\nDXB LYP ',
+    'LHE DXB\nDXB IST\nIST ASR \nASR IST \nIST DXB\nDXB MUX ',
+  ];
+
+  final List<String> _c4 = [
+    '0715 1120 \n1825 1945\n1610 1735\n2050 0405 ',
+    '0635 1035\n1825 1945\n1610 1735\n2125 0455',
+    '0800  1220\n1445  1605\n1655  1820\n2235  0605',
+    '0320  0550 \n1015  1425\n1445  1605\n1655  1820\n2005  0120\n0710  1100 ',
+    '0320  0550 \n1015  1425\n1445  1605\n1655  1820\n2005  0120\n0600  0935  ',
+  ];
+
 }

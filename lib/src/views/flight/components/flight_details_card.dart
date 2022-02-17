@@ -6,12 +6,20 @@ class FlightDetailsCard extends StatelessWidget {
   final String exGroup;
   final String cities;
   final String airline;
+  final String c1;
+  final String c2;
+  final String c3;
+  final String c4;
 
   const FlightDetailsCard({
     Key? key,
     required this.exGroup,
     required this.airline,
     required this.cities,
+    required this.c1,
+    required this.c2,
+    required this.c3,
+    required this.c4,
   }) : super(key: key);
 
   @override
@@ -63,67 +71,79 @@ class FlightDetailsCard extends StatelessWidget {
 
               /// Todo: flights schedule
               SizedBox(
-                // width: getProportionateScreenWidth(340.0),
+                // width: getProportionateScreenWidth(60.0),
                 child: Row(
                   children: [
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'Phone\nPhone\nPhone\nPhone',
-                          overflow: TextOverflow.visible,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: basePurpleDark,
-                            // fontSize: 16,
+                    SizedBox(
+                      width: getProportionateScreenWidth(80.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            c1,
+                            overflow: TextOverflow.visible,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: basePurpleDark,
+                              // fontSize: 16,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'Phone\nPhone\nPhone\nPhone',
-                          // textAlign: TextAlign.center,
-                          overflow: TextOverflow.visible,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: basePurpleDark,
-                            // fontSize: 16,
+                    SizedBox(
+                      width: getProportionateScreenWidth(80.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            c2,
+                            // textAlign: TextAlign.center,
+                            overflow: TextOverflow.visible,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: basePurpleDark,
+                              // fontSize: 16,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'Phone\nPhone\nPhone\nPhone',
-                          // textAlign: TextAlign.center,
-                          overflow: TextOverflow.visible,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: basePurpleDark,
-                            // fontSize: 16,
+                    SizedBox(
+                      width: getProportionateScreenWidth(80.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            c3,
+                            // textAlign: TextAlign.center,
+                            overflow: TextOverflow.visible,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: basePurpleDark,
+                              // fontSize: 16,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text(
-                          'Phone\nPhone\nPhone\nPhone',
-                          // textAlign: TextAlign.center,
-                          overflow: TextOverflow.visible,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: basePurpleDark,
-                            // fontSize: 16,
+                    SizedBox(
+                      width: getProportionateScreenWidth(80.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            c4,
+                            // textAlign: TextAlign.center,
+                            overflow: TextOverflow.visible,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: basePurpleDark,
+                              // fontSize: 16,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),

@@ -57,7 +57,7 @@ class _TravelGuideScreenState extends State<TravelGuideScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: baseWhitePlain,
-                      fontSize: 28,
+                      fontSize: 24,
                     ),
                   ),
                 ],

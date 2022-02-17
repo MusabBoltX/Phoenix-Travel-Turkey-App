@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:phoenix_travel_app/src/core/constants.dart';
 import 'package:phoenix_travel_app/src/core/size_config.dart';
+import 'package:phoenix_travel_app/src/views/dialog_box/alertbox.dart';
 import 'package:phoenix_travel_app/src/views/onboarding/components/escort_box.dart';
 import 'package:phoenix_travel_app/src/views/onboarding/components/flight_box.dart';
 import 'package:phoenix_travel_app/src/views/onboarding/components/hotels_box.dart';
@@ -17,6 +18,19 @@ class OnboardScreen extends StatefulWidget {
 }
 
 class _OnboardScreenState extends State<OnboardScreen> {
+
+  @override
+  void initState() {
+    Future.delayed(const Duration(seconds: 2), () {
+      showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return const CustomDialogBox(
+              img: 'assets/dialog.jpeg',
+            );
+          });
+    });    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);

@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:phoenix_travel_app/src/views/splash/splash_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const PhoenixTurkeyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class PhoenixTurkeyApp extends StatelessWidget {
+  const PhoenixTurkeyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
     ]);
 
     return MaterialApp(
-      title: 'Pheonix Travel',
+      title: 'Phoenix tour of Turkey',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(title: 'Flutter Demo Home Page'),
+      home: const SplashScreen(title: 'Phoenix tour of Turkey'),
     );
   }
 }

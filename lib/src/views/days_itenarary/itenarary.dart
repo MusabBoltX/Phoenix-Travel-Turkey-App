@@ -11,7 +11,9 @@ import 'package:phoenix_travel_app/src/views/days_itenarary/days_screens/day7.da
 import 'package:phoenix_travel_app/src/views/days_itenarary/days_screens/day8.dart';
 
 class ItenararyScreen extends StatefulWidget {
-  const ItenararyScreen({Key? key}) : super(key: key);
+  const ItenararyScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   _ItenararyScreenState createState() => _ItenararyScreenState();
@@ -19,6 +21,23 @@ class ItenararyScreen extends StatefulWidget {
 
 class _ItenararyScreenState extends State<ItenararyScreen> {
   int selectedIndex = 0;
+  bool d1 = true;
+  bool d2 = false;
+  bool d3 = false;
+  bool d4 = false;
+  bool d5 = false;
+  bool d6 = false;
+  bool d7 = false;
+  bool d8 = false;
+
+  bool t1 = true;
+  bool t2 = false;
+  bool t3 = false;
+  bool t4 = false;
+  bool t5 = false;
+  bool t6 = false;
+  bool t7 = false;
+  bool t8 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +91,7 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: baseWhitePlain,
-                          fontSize: 28,
+                          fontSize: 24,
                         ),
                       ),
                     ],
@@ -83,14 +102,14 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
                         child: Wrap(
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
-                            _dayCard(daysList[0], 0),
-                            _dayCard(daysList[1], 1),
-                            _dayCard(daysList[2], 2),
-                            _dayCard(daysList[3], 3),
-                            _dayCard(daysList[4], 4),
-                            _dayCard(daysList[5], 5),
-                            _dayCard(daysList[6], 6),
-                            _dayCard(daysList[7], 7),
+                            _dayCard(daysList[0], 0, t1, d1),
+                            _dayCard(daysList[1], 1, t2, d2),
+                            _dayCard(daysList[2], 2, t3, d3),
+                            _dayCard(daysList[3], 3, t4, d4),
+                            _dayCard(daysList[4], 4, t5, d5),
+                            _dayCard(daysList[5], 5, t6, d6),
+                            _dayCard(daysList[6], 6, t7, d7),
+                            _dayCard(daysList[7], 7, t8, d8),
                           ],
                         )),
                   ),
@@ -98,24 +117,80 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
               ),
             ),
 
+            // Padding(
+            //   padding: const EdgeInsets.all(5.0),
+            //   child: Row(
+            //     crossAxisAlignment: CrossAxisAlignment.center,
+            //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //     children: [
+            //       Card(
+            //         child: Padding(
+            //           padding: const EdgeInsets.only(
+            //               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
+            //           child: Text(
+            //             d1 == true
+            //                 ? dateList[0]
+            //                 : d2 == true ? dateList[1]
+            //                 : d3 == true ? dateList[2]
+            //                 : d4 == true ? dateList[3]
+            //                 : d5 == true ? dateList[4]
+            //                 : d6 == true ? dateList[5]
+            //                 : d7 == true ? dateList[6]
+            //                 : d8 == true ? dateList[7] : dateList[0],
+            //
+            //             textAlign: TextAlign.center,
+            //             overflow: TextOverflow.visible,
+            //             style: TextStyle(
+            //               color: basePurpleDark,
+            //               // fontSize: 16,
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //       Card(
+            //         child: Padding(
+            //           padding: const EdgeInsets.only(
+            //               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
+            //           child: Text(
+            //             t1 == true ? tempList[0] :
+            //             t2 == true ? tempList[0] :
+            //             t3 == true ? tempList[0] :
+            //             t4 == true ? tempList[0] :
+            //             t5 == true ? tempList[0] :
+            //             t6 == true ? tempList[0] :
+            //             t7 == true ? tempList[0] :
+            //             t8 == true ? tempList[0]
+            //             : tempList[0],
+            //             textAlign: TextAlign.center,
+            //             overflow: TextOverflow.visible,
+            //             style: TextStyle(
+            //               color: basePurpleDark,
+            //               // fontSize: 16,
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+
             /// center
-            selectedIndex == 0
-                ? const Day1Screen()
-                : selectedIndex == 1
-                    ? const Day2Screen()
-                    : selectedIndex == 2
-                        ? const Day3Screen()
-                        : selectedIndex == 3
-                            ? const Day4Screen()
-                            : selectedIndex == 4
-                                ? const Day5Screen()
-                                : selectedIndex == 5
-                                    ? const Day6Screen()
-                                    : selectedIndex == 6
-                                        ? const Day7Screen()
-                                        : selectedIndex == 7
-                                            ? const Day8Screen()
-                                            : Container(),
+            if (selectedIndex == 0)
+              const Day1Screen()
+            else if (selectedIndex == 1)
+              const Day2Screen()
+            else if (selectedIndex == 2)
+              const Day3Screen()
+            else if (selectedIndex == 3)
+              const Day4Screen()
+            else if (selectedIndex == 4)
+              const Day5Screen()
+            else if (selectedIndex == 5)
+              const Day6Screen()
+            else if (selectedIndex == 6)
+              const Day7Screen()
+            else if (selectedIndex == 7)
+              const Day8Screen()
 
             /// center
           ],
@@ -145,11 +220,13 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
     );
   }
 
-  Widget _dayCard(day, i) {
+  Widget _dayCard(day, i, tBool, dBool) {
     return GestureDetector(
       onTap: () {
         setState(() {
           selectedIndex = i;
+          tBool = true;
+          dBool = true;
         });
       },
       child: Card(
@@ -205,4 +282,27 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
     const Day7Screen(),
     const Day8Screen(),
   ];
+
+  final List<String> tempList = [
+    '18 °C / 7 °C',
+    '13 °C / 4 °C',
+    '9 °C / -2 °C',
+    '6 °C / -4 °C',
+    '9 °C / 4 °C',
+    '11 °C / 4 °C',
+    '11 °C / 5 °C',
+    '10 °C / 4 °C',
+  ];
+
+  final List<String> dateList = [
+    '21 February 2022',
+    '22 February 2022',
+    '23 February 2022',
+    '24 February 2022',
+    '25 February 2022',
+    '26 February 2022',
+    '27 February 2022',
+    '28 February 2022',
+  ];
+
 }
