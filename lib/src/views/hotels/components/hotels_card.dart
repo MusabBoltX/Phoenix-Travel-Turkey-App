@@ -52,7 +52,7 @@ class HotelDetailsCard extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: basePurpleDark,
-                        fontSize: 24,
+                        fontSize: 20,
                       ),
                     ),
 
@@ -61,7 +61,7 @@ class HotelDetailsCard extends StatelessWidget {
                     /// address
                     Flexible(
                       child: Text(
-                        'Address :  ' + address,
+                        'Address :  ' + address + '\n',
                         // textAlign: TextAlign.center,
                         overflow: TextOverflow.visible,
                         style: TextStyle(
@@ -77,7 +77,7 @@ class HotelDetailsCard extends StatelessWidget {
                     /// phoneNumber
                     Flexible(
                       child: Text(
-                        'Phone :  ' + phoneNumber,
+                        'Phone :  ' + phoneNumber + '\n',
                         // textAlign: TextAlign.center,
                         overflow: TextOverflow.visible,
                         style: TextStyle(

@@ -53,11 +53,11 @@ class EscortPersonDetailsCard extends StatelessWidget {
                   children: [
                     Text(
                       personName,
-                      textAlign: TextAlign.center,
+                      // textAlign: TextAlign.center,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: basePurpleDark,
-                        fontSize: 28,
+                        fontSize: 20,
                       ),
                     ),
 
@@ -66,7 +66,7 @@ class EscortPersonDetailsCard extends StatelessWidget {
                     /// airline
                     Flexible(
                       child: Text(
-                        'Airline :  ' + airline,
+                        'Airline :  ' + airline + '\n',
                         // textAlign: TextAlign.center,
                         overflow: TextOverflow.visible,
                         style: TextStyle(
@@ -82,7 +82,7 @@ class EscortPersonDetailsCard extends StatelessWidget {
                     /// deptCity
                     Flexible(
                       child: Text(
-                        'Departure City :  ' + deptCity,
+                        'Departure City :  ' + deptCity + '\n',
                         // textAlign: TextAlign.center,
                         overflow: TextOverflow.visible,
                         style: TextStyle(
@@ -96,7 +96,7 @@ class EscortPersonDetailsCard extends StatelessWidget {
 
                     /// pakContact
                     Text(
-                      'Pak Contact :  ' + pakContact,
+                      'Pak Contact :  ' + pakContact + '\n',
                       // textAlign: TextAlign.center,
                       overflow: TextOverflow.visible,
                       style: TextStyle(
@@ -110,7 +110,7 @@ class EscortPersonDetailsCard extends StatelessWidget {
                     /// turkishContact
                     Flexible(
                       child: Text(
-                        'Turkish Contact :  ' + turkishContact,
+                        'Turkish Contact :  ' + turkishContact + '\n',
                         // textAlign: TextAlign.center,
                         overflow: TextOverflow.visible,
                         style: TextStyle(

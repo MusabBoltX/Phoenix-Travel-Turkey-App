@@ -84,14 +84,20 @@ class _Day6ScreenState extends State<Day6Screen> {
 
   final List<String> _details = [
     'Breakfast at Hotel\n\nTransfer to Sogut\n\nVisit the Famous Ertugul Ghazi Tomb & Mosque & Adabali tomb & Turgut tomb & Inegol City & Bilecik City  ',
+    'Tranfer Sogut city visit Ertugrul ghazi Tomb and Mosque',
     'Lunch at Sofra Restaurant.',
     'Transfer Back to Istanbul',
-    'Arrival at Istanbul\n\nEvening Transfer for Shopping With Dinner Allowance 150 TL\n\nOver Night at Hotel ',
+    'Adabali tomb & Turgut tomb & Inegol City & Bilecik City  ',
+    'Transfer at Istanbul',
+    'Arrival at Istanbul\n\nEvening Transfer for Shopping With Dinner Allowance\n\nOver Night at Hotel ',
   ];
   final List<String> _hrs = [
     '0900Hrs',
+    '1000Hrs',
     '1300Hrs',
     '1500Hrs',
+    '1400Hrs',
     '1700Hrs',
+    '1900Hrs',
   ];
 }

@@ -85,7 +85,7 @@ class _Day1ScreenState extends State<Day1Screen> {
     'Arrival istanbul TK 709 KHI-IST (KARACHI | HYDERABAD |SUKKUR |QUETTA )\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa Enroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )\n\nArrival at Bursa & Check Inn at Almira Hotel ',
     'Arrival istanbul TK 715  LHE-IST (LAHORE   |SAHIWAL |GUJRANWALA )\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa Enroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )\n\nArrival at Bursa & Check Inn at Almira Hotel',
     'ARRIVAL BY EK 123 DXB-IST (MULTAN | FAISALABAD )',
-    'Meet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa (Pack Lunch Will be Served)\n\nCheck inn Fomralities  (Movenpick Hotel)\n\nTime Free For Fresh Up & Personal Activites\n\nDinner at Almirah Hotel\n\nOver Night at Hotel',
+    'Meet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa (Pack Lunch Will be Served)\n\nCheck inn Fomralities  (Movenpick Hotel)\n\nTime Free For Fresh Up & Personal Activites\n\nDinner at Almirah Hotel\n\nOver Night at Hotel\n\noksijen outlet service',
   ];
   final List<String> _hrs = [
     '1035hrs',

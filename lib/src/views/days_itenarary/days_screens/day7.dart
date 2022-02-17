@@ -83,7 +83,7 @@ class _Day7ScreenState extends State<Day7Screen> {
   }
 
   final List<String> _details = [
-    'Breakfast at Hotel\n\nDay Free For Shopping & Personal activities With Lunch Allowance 150 TL',
+    'Breakfast at Hotel\n\nDay Free For Shopping & Personal activities With Lunch Allowance',
     'Transfer to Pier For Bosphorus Dinner Cruise',
     'Bosphorus Dinner Cruise With Entertainment\n\nTransfer Back to Hotel',
   ];

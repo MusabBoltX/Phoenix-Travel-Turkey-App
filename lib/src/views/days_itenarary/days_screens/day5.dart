@@ -83,7 +83,7 @@ class _Day5ScreenState extends State<Day5Screen> {
   }
 
   final List<String> _details = [
-    'Breakfast at Hotel\n\nCheck Out From Hotel\n\nKayseri Orientation Tour\n\nLunch at kemal Kock Restaurant Kayseri',
+    'Breakfast at Hotel\n\nCheck Out From Hotel\n\nKayseri Orientation Tour\n\nLunch at Kemal Kochak Restaurant Kayseri',
     'Departure Flight PC 2737 ASR-IST (Sabia Airport)',
     'Departure Flight TK 2013 ASR-IST',
     'Arrival By PC 2737 (Karachi|Hyderabad|Sukkur|Quetta|Rawalpindi|Peshawar)',

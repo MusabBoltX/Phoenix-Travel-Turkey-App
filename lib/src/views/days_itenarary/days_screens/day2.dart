@@ -85,7 +85,7 @@ class _Day2ScreenState extends State<Day2Screen> {
     'Arrival at Cable Car Station & Hote Tea & Coffee Will be Served at Grand Yazici Hotel  Hotel\n\nTime free to Explore Snowy mountain and Personal activities',
     'Buffet Lunch Will be Served at Grand Yazici Hotel\n\nTransfer Back to Bursa City Center by Cable Car\n\nDrop to Old Silk Market.\n\nTransfer Back to Hotel\n\nTime Free For Fresh Up & Personal Activites',
     'Transfer for Dinner at Kofteci Yusuf Restaurant\n\nTransfer Back to hotel\n\nOver Night at Hotel ',
-    'Arrival Istanbul by TK 711 ISB-IST (47PAX) (RAWALPINDI |PESHAWAR)\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa\n\nEnroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )',
+    'Istanbul by TK 711 ISB-IST (47PAX) (RAWALPINDI |PESHAWAR)\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa\n\nEnroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )',
   ];
 
   final List<String> _hrs = [
