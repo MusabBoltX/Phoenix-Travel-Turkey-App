@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     ]);
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Pheonix Travel',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
