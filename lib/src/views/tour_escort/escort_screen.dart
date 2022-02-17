@@ -14,30 +14,44 @@ class _TourEscortScreenState extends State<TourEscortScreen> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return Scaffold(
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Container(
-                height: 80,
-                width: getProportionateScreenWidth(375.0),
-                decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(
-                    bottomRight: Radius.circular(40.0),
-                    bottomLeft: Radius.circular(40.0),
-                  ),
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter,
-                    colors: [
-                      baseBlackPure,
-                      basePurpleDark,
-                    ],
-                  ),
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            Container(
+              height: 80,
+              width: getProportionateScreenWidth(375.0),
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.only(
+                  bottomRight: Radius.circular(40.0),
+                  bottomLeft: Radius.circular(40.0),
                 ),
-                child: Center(
-                  child: Text(
+                gradient: LinearGradient(
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter,
+                  colors: [
+                    baseBlackPure,
+                    basePurpleDark,
+                  ],
+                ),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 10.0, right: 20.0),
+                      child: Icon(
+                        Icons.arrow_back_rounded,
+                        size: 30,
+                        color: baseWhitePlain,
+                      ),
+                    ),
+                  ),
+                  Text(
                     "Tour Escorts",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -46,67 +60,50 @@ class _TourEscortScreenState extends State<TourEscortScreen> {
                       fontSize: 28,
                     ),
                   ),
+                ],
+              ),
+            ),
+
+            /// center
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListView.builder(
+                    itemCount: 4,
+                    itemBuilder: (context, index) {
+                      return EscortPersonDetailsCard(
+                        airline: _airline[index],
+                        deptCity: _deptCity[index],
+                        pakContact: _pakContact[index],
+                        turkishContact: _turkishContact[index],
+                        image: _images[index],
+                        personName: _names[index],
+                      );
+                    }),
+              ),
+            ),
+          ],
+        ),
+        bottomNavigationBar: Container(
+          color: baseWhitePlain,
+          width: getProportionateScreenWidth(375.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              SizedBox(
+                width: getProportionateScreenWidth(120.0),
+                child: Image.asset(
+                  "assets/logo.png",
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.of(context).pop();
-                },
-                child: Positioned(
-                  left: 1.0,
-                  top: 1.0,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 10.0, top: 25.0),
-                    child: Icon(
-                      Icons.arrow_back_rounded,
-                      size: 30,
-                      color: baseWhitePlain,
-                    ),
-                  ),
+              SizedBox(
+                width: getProportionateScreenWidth(120.0),
+                child: Image.asset(
+                  "assets/bottom_icn.png",
                 ),
               ),
             ],
           ),
-
-          /// center
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: ListView.builder(
-                itemCount: 4,
-                itemBuilder: (context, index) {
-                return EscortPersonDetailsCard(
-                  airline: _airline[index],
-                  deptCity: _deptCity[index],
-                  pakContact: _pakContact[index],
-                  turkishContact: _turkishContact[index],
-                  image: _images[index],
-                  personName: _names[index],
-                );
-              }),
-            ),
-          ),
-        ],
-      ),
-      bottomNavigationBar: Container(
-        color: baseWhitePlain,
-        width: getProportionateScreenWidth(375.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            SizedBox(
-              width: getProportionateScreenWidth(120.0),
-              child: Image.asset(
-                "assets/logo.png",
-              ),
-            ),
-            SizedBox(
-              width: getProportionateScreenWidth(120.0),
-              child: Image.asset(
-                "assets/bottom_icn.png",
-              ),
-            ),
-          ],
         ),
       ),
     );
@@ -148,5 +145,4 @@ class _TourEscortScreenState extends State<TourEscortScreen> {
     '+90 552 671 29 13',
     '+90 552 158 29 13',
   ];
-
 }
