@@ -102,14 +102,14 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
                         child: Wrap(
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
-                            _dayCard(daysList[0], 0, t1, d1),
-                            _dayCard(daysList[1], 1, t2, d2),
-                            _dayCard(daysList[2], 2, t3, d3),
-                            _dayCard(daysList[3], 3, t4, d4),
-                            _dayCard(daysList[4], 4, t5, d5),
-                            _dayCard(daysList[5], 5, t6, d6),
-                            _dayCard(daysList[6], 6, t7, d7),
-                            _dayCard(daysList[7], 7, t8, d8),
+                            _dayCard(daysList[0], 0),
+                            _dayCard(daysList[1], 1),
+                            _dayCard(daysList[2], 2),
+                            _dayCard(daysList[3], 3),
+                            _dayCard(daysList[4], 4),
+                            _dayCard(daysList[5], 5),
+                            _dayCard(daysList[6], 6),
+                            _dayCard(daysList[7], 7),
                           ],
                         )),
                   ),
@@ -117,80 +117,23 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
               ),
             ),
 
-            // Padding(
-            //   padding: const EdgeInsets.all(5.0),
-            //   child: Row(
-            //     crossAxisAlignment: CrossAxisAlignment.center,
-            //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //     children: [
-            //       Card(
-            //         child: Padding(
-            //           padding: const EdgeInsets.only(
-            //               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
-            //           child: Text(
-            //             d1 == true
-            //                 ? dateList[0]
-            //                 : d2 == true ? dateList[1]
-            //                 : d3 == true ? dateList[2]
-            //                 : d4 == true ? dateList[3]
-            //                 : d5 == true ? dateList[4]
-            //                 : d6 == true ? dateList[5]
-            //                 : d7 == true ? dateList[6]
-            //                 : d8 == true ? dateList[7] : dateList[0],
-            //
-            //             textAlign: TextAlign.center,
-            //             overflow: TextOverflow.visible,
-            //             style: TextStyle(
-            //               color: basePurpleDark,
-            //               // fontSize: 16,
-            //             ),
-            //           ),
-            //         ),
-            //       ),
-            //       Card(
-            //         child: Padding(
-            //           padding: const EdgeInsets.only(
-            //               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
-            //           child: Text(
-            //             t1 == true ? tempList[0] :
-            //             t2 == true ? tempList[0] :
-            //             t3 == true ? tempList[0] :
-            //             t4 == true ? tempList[0] :
-            //             t5 == true ? tempList[0] :
-            //             t6 == true ? tempList[0] :
-            //             t7 == true ? tempList[0] :
-            //             t8 == true ? tempList[0]
-            //             : tempList[0],
-            //             textAlign: TextAlign.center,
-            //             overflow: TextOverflow.visible,
-            //             style: TextStyle(
-            //               color: basePurpleDark,
-            //               // fontSize: 16,
-            //             ),
-            //           ),
-            //         ),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-
             /// center
             if (selectedIndex == 0)
-              const Day1Screen()
+              Day1Screen(day: dateList[0], temp: tempList[0],)
             else if (selectedIndex == 1)
-              const Day2Screen()
+              Day2Screen(day: dateList[1], temp: tempList[1],)
             else if (selectedIndex == 2)
-              const Day3Screen()
+              Day3Screen(day: dateList[2], temp: tempList[2],)
             else if (selectedIndex == 3)
-              const Day4Screen()
+              Day4Screen(day: dateList[3], temp: tempList[3],)
             else if (selectedIndex == 4)
-              const Day5Screen()
+              Day5Screen(day: dateList[4], temp: tempList[4],)
             else if (selectedIndex == 5)
-              const Day6Screen()
+              Day6Screen(day: dateList[5], temp: tempList[5],)
             else if (selectedIndex == 6)
-              const Day7Screen()
+              Day7Screen(day: dateList[6], temp: tempList[6],)
             else if (selectedIndex == 7)
-              const Day8Screen()
+              Day8Screen(day: dateList[7], temp: tempList[7],)
 
             /// center
           ],
@@ -220,13 +163,11 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
     );
   }
 
-  Widget _dayCard(day, i, tBool, dBool) {
+  Widget _dayCard(day, i) {
     return GestureDetector(
       onTap: () {
         setState(() {
           selectedIndex = i;
-          tBool = true;
-          dBool = true;
         });
       },
       child: Card(
@@ -270,17 +211,6 @@ class _ItenararyScreenState extends State<ItenararyScreen> {
     'assets/day3.png',
     'assets/day3.png',
     'assets/day3.png',
-  ];
-
-  List routeName = [
-    const Day1Screen(),
-    const Day2Screen(),
-    const Day3Screen(),
-    const Day4Screen(),
-    const Day5Screen(),
-    const Day6Screen(),
-    const Day7Screen(),
-    const Day8Screen(),
   ];
 
   final List<String> tempList = [

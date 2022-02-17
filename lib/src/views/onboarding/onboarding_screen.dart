@@ -69,9 +69,10 @@ class _OnboardScreenState extends State<OnboardScreen> {
             ),
           ),
           SizedBox(height: getProportionateScreenHeight(10.0)),
-          const Text(
+          Text(
             "Esteemed sales partners, we welcome you to the memorable Turkey trip",
             textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.subtitle2,
           ),
           Expanded(
             child: Padding(
