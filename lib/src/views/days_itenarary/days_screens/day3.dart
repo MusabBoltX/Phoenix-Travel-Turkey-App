@@ -38,6 +38,7 @@ class _Day3ScreenState extends State<Day3Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -53,6 +54,7 @@ class _Day3ScreenState extends State<Day3Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -83,14 +85,14 @@ class _Day3ScreenState extends State<Day3Screen> {
 
   final List<String> _details = [
     'Breakfast at Hotel\n\nCheck Out From Hotel ( Lahore |Sahiwal|Multan |Faisalabad)\n\nTransfer to Istanbul Airport for Departure Flight IST-ASR TK2012',
-    'Arrival at Istanbul Airport\n\nCheck Inn For Flight TK 2012 IST-ASR\n\nLunch Allowance Will be Provided\n\nCheck Out From Hotel (Karachi|Hyderabad|Sukkur|Quetta|Rawalpindi|Peshawar)\n\nTransfer for Lunch at Yuce Hunkar',
+    'Arrival at Istanbul Airport\n\nCheck Inn For Flight TK 2012 IST-ASR\n\nLunch Allowance Will be Provided\n\nCheck Out From Hotel (Karachi|Hyderabad|Sukkur|Quetta|Rawalpindi|Peshawar)',
     'Transfer to  Istanbul (Sabiha- Saw) Airport',
-    'Arrival at Saw Airport\n\nCheck Inn for Flight PC 2738 SAW-ASR Flight',
+    'Arrival at Saw Airport\n\nCheck Inn for Flight PC 2738 SAW-ASR Flight\n\nTransfer for lunch at Yunce Hunker',
     'Departure Flight SAW-ASR ',
     'Arrival By TK 2012 ( Lahore |Sahiwal|Multan |Faisalabad)\n\nMeet & Assist at Kayseri Airport\n\nTransfer to Cappadocia ',
     'Arrival at Double Tree Hilton\n\nCheck Inn Formalities',
     'Arrival By PC 2738 (Karachi|Hyderabad|Sukkur|Quetta|Rawalpindi|Peshawar)\n\nMeet & Assist at Kayseri Airport',
-    'Transfer to Cappadocia\n\nDinner at Adeedaya Restaurant  for all Groups\n\nCheck Inn at Double Tree Hilton\n\nOver Night at Hotel',
+    'Transfer to Cappadocia\n\nDinner at Adedaya Restaurant  for all Groups\n\nOvernight at Hotel',
   ];
 
   final List<String> _hrs = [
@@ -100,6 +102,7 @@ class _Day3ScreenState extends State<Day3Screen> {
     '1600Hrs',
     '1845Hrs ',
     '1605Hrs ',
+    '1830Hrs ',
     '1945Hrs',
     '2030Hrs ',
   ];

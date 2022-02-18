@@ -37,6 +37,7 @@ class _Day8ScreenState extends State<Day8Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -52,6 +53,7 @@ class _Day8ScreenState extends State<Day8Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -83,7 +85,7 @@ class _Day8ScreenState extends State<Day8Screen> {
   }
 
   final List<String> _details = [
-    'Breakfast at Hotel\n\nCheck Out From Hotel\n\nVisit Ayub Ansari\n\nDrop for Shopping Olivium Mall With Lunch Allowance\n\nTransfer to Istanbul Airport As Per Respective  Respective Flight ',
+    'Breakfast at Hotel\n\nCheck Out From Hotel\n\nVisit Ayub Ansari Mosque\n\nDrop for Shopping Olivium Mall With Lunch Allowance\n\nTransfer to Istanbul Airport As Per Respective  Respective Flight ',
     'Departure Flight   EK 122 IST-DXB  (Multan | Faisalabad Group)',
     'Departure Flight TK 708 IST-KHI\n\n( Karchi | Hyderabad | Sukkur |Quetaa)',
     'Departure Flight TK 710 IST-ISB (Rawalpindi |Peshawar )',

@@ -37,6 +37,7 @@ class _Day4ScreenState extends State<Day4Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -52,6 +53,7 @@ class _Day4ScreenState extends State<Day4Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -85,12 +87,12 @@ class _Day4ScreenState extends State<Day4Screen> {
   final List<String> _details = [
     'Proceed for Hot Air Balloon Ride  (Subject to Weather Condition )',
     'Transfer Back to Hotel\n\nBreakfast at Hotel',
-    'FullDay Cappadocia Sightseeing Tour With 02 Hour Jeep Safari tour\n\nLunch at Uranos Cave Restaurant',
+    'Full Day Cappadocia Sightseeing Tour With 02 Hours Jeep Safari tour\n\nLunch at Uranos Cave Restaurant',
     'Transfer Back to Hotel',
-    'Transfer for Turkish Night Dinner  With Entertainment\n\nTransfer Back to Hotel\n\nOver Night at Hotel',
+    'Transfer for Turkish Night Dinner With Entertainment at Evranos Restaurant.\n\nTransfer Back to Hotel\n\nOvernight at Hotel',
   ];
   final List<String> _hrs = [
-    '0600-0630',
+    '0600-0630Hrs',
     '0830Hrs',
     '1030Hrs',
     '1230Hrs',

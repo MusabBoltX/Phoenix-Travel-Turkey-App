@@ -76,6 +76,7 @@ class _HotelsScreenState extends State<HotelsScreen> {
                         phoneNumber: _phoneNumber[index],
                         address: _address[index],
                         hotelName: _hotelName[index],
+                        dateRange: _dateRange[index],
                       );
                     }),
               ),
@@ -116,8 +117,8 @@ class _HotelsScreenState extends State<HotelsScreen> {
   final List<String> _hotelName = [
     'Bursa Almirah Hotel',
     'Bursa Movenpick Hotel',
-    'Cappadocia Double Tree by hilton avanos ',
-    'Intercontinental istanbul',
+    'Cappadocia Double Tree by Hilton Avanos',
+    'Intercontinental Istanbul',
   ];
   final List<String> _address = [
     'Santral Garaj, Ulubatlı Hasan Blv.No:5, 16200 Osmangazi/Bursa, Turkey',
@@ -130,5 +131,12 @@ class _HotelsScreenState extends State<HotelsScreen> {
     '+90 224 230 01 00',
     '+90 384 511 11 11',
     '+90 212 368 44 44',
+  ];
+
+  final List<String> _dateRange = [
+    'BURSA (21 - 23 Feb)',
+    '',
+    'CAPPADOCIA (23 - 25 Feb)',
+    'ISTANBUL (25 - 28 Feb)',
   ];
 }

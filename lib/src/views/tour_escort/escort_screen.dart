@@ -119,7 +119,7 @@ class _TourEscortScreenState extends State<TourEscortScreen> {
     'Anwar Jahangir',
     'Farhad Ahmed',
     'Waqas Ahmed',
-    'Mr. Adnan Ahmed',
+    'Adnan Ahmed',
   ];
   final List<String> _airline = [
     'Turkish Airline',

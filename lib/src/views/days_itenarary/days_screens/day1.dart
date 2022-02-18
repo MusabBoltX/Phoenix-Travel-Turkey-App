@@ -38,6 +38,7 @@ class _Day1ScreenState extends State<Day1Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -53,6 +54,7 @@ class _Day1ScreenState extends State<Day1Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -81,17 +83,19 @@ class _Day1ScreenState extends State<Day1Screen> {
   }
 
   final List<String> _details = [
-    'Arrival Istanbul by TK 711 ISB-IST (47PAX) (RAWALPINDI |PESHAWAR)\n\Meet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa\n\nTransfer to Bursa Enroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )',
-    'Arrival istanbul TK 709 KHI-IST (KARACHI | HYDERABAD |SUKKUR |QUETTA )\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa Enroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )\n\nArrival at Bursa & Check Inn at Almira Hotel ',
-    'Arrival istanbul TK 715  LHE-IST (LAHORE   |SAHIWAL |GUJRANWALA )\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa Enroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )\n\nArrival at Bursa & Check Inn at Almira Hotel',
-    'ARRIVAL BY EK 123 DXB-IST (MULTAN | FAISALABAD )',
-    'Meet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa (Pack Lunch Will be Served)\n\nCheck inn Fomralities  (Movenpick Hotel)\n\nTime Free For Fresh Up & Personal Activites\n\nDinner at Almirah Hotel\n\nOver Night at Hotel\n\noksijen outlet service',
+    'Arrival at  Istanbul by TK 711 ISB-IST (RAWALPINDI |PESHAWAR)\n\nMeet & assist at the airport\n\nTransfer to Bursa by bus\n\nEn-route Lunch at Bursa Kebap Restaurant.',
+    'Arrival at Istanbul by TK 709 KHI-IST (KARACHI | HYDERABAD |SUKKUR |QUETTA )\n\nMeet & assist at the airport\n\nTransfer to Bursa by bus\n\nEn-route Lunch at Bursa Kebap Restaurant\n\nArrival at Bursa & Check Inn at Almira Hotel ',
+    'Arrival at Istanbul by TK 715  LHE-IST (LAHORE   |SAHIWAL |GUJRANWALA )\n\nMeet & assist at the airport\n\nTransfer to Bursa by bus\n\nEn-route Lunch at Bursa Kebap Restaurant\n\nArrival at Bursa & Check Inn at Almira Hotel',
+    'Arrival at Istanbul by EK 123 DXB-IST (MULTAN | FAISALABAD )\n\nMeet & Assist at Airport\n\nTransfer to Bursa. (Pack Fast Food Lunch Will be Served)\n\nCheck inn Formalities at Movenpick Hotel\n\nTime Free For Fresh Up & Personal Activities',
+    'Meet & Assist at Airport\n\nTransfer to Bursa (Pack Fast Food Lunch Will be Served)\n\nCheck inn Formalities  (Movenpick Hotel)   \n\nTime Free For Fresh Up & Personal Activities.\n\nCheck inn Fomralities  (Movenpick Hotel)\n\nTime Free For Fresh Up & Personal Activities',
+    'Dinner at Almirah Hotel\n\nOvernight at Hotel',
   ];
   final List<String> _hrs = [
-    '1035hrs',
+    '1035Hrs',
     '1120Hrs',
-    '1220HRS',
-    '1425HRS',
-    '1930Hrs',
+    '1220Hrs',
+    '1425Hrs',
+    '1530Hrs',
+    '2000-2200Hrs',
   ];
 }

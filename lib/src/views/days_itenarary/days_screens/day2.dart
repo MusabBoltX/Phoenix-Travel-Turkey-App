@@ -38,6 +38,7 @@ class _Day2ScreenState extends State<Day2Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -53,6 +54,7 @@ class _Day2ScreenState extends State<Day2Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -82,17 +84,17 @@ class _Day2ScreenState extends State<Day2Screen> {
 
   final List<String> _details = [
     'Breakfast at Hotel\n\nProceed to Bursa City Tour followed by visit to Orhan Ghazi, Usman Ghazi Tomb & Green Mosque.\n\nCable Car Ride to Ulludag Mountai Level-2 (Approx 40 Min Cable Car Ride)',
-    'Arrival at Cable Car Station & Hote Tea & Coffee Will be Served at Grand Yazici Hotel  Hotel\n\nTime free to Explore Snowy mountain and Personal activities',
-    'Buffet Lunch Will be Served at Grand Yazici Hotel\n\nTransfer Back to Bursa City Center by Cable Car\n\nDrop to Old Silk Market.\n\nTransfer Back to Hotel\n\nTime Free For Fresh Up & Personal Activites',
-    'Transfer for Dinner at Kofteci Yusuf Restaurant\n\nTransfer Back to hotel\n\nOver Night at Hotel ',
-    'Istanbul by TK 711 ISB-IST (47PAX) (RAWALPINDI |PESHAWAR)\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa\n\nEnroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )',
+    'Arrival at Cable Car Station & Hot Tea & Coffee Will be Served at Grand Yazici Hotel  Hotel\n\nTime free to Explore Snowy mountain and Personal activities',
+    'Buffet Lunch Will be Served at Grand Yazici Hotel\n\nDrop to Old Silk Market\n\nTransfer Back to Hotel\n\nTime Free For Fresh Up & Personal Activities',
+    'Transfer for Dinner at Kofteci Yusuf Restaurant\n\nTransfer Back to hotel\n\nOvernight at Hotel ',
+    // 'Istanbul by TK 711 ISB-IST (47PAX) (RAWALPINDI |PESHAWAR)\n\nMeet & Assist at Airport  & Transfer to Bursa by Bus\n\nTransfer to Bursa\n\nEnroute Lunch at Oksijen Outlet Service Center (Lunch at Bursa  Kebap Restaurant )',
   ];
 
   final List<String> _hrs = [
-    '1000hrs',
+    '1000Hrs',
     '1200Hrs ',
     '1430Hrs',
     '2030Hrs ',
-    '1035hrs',
+    // '1035hrs',
   ];
 }

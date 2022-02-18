@@ -38,6 +38,7 @@ class _Day5ScreenState extends State<Day5Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -53,6 +54,7 @@ class _Day5ScreenState extends State<Day5Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -84,15 +86,15 @@ class _Day5ScreenState extends State<Day5Screen> {
 
   final List<String> _details = [
     'Breakfast at Hotel\n\nCheck Out From Hotel\n\nKayseri Orientation Tour\n\nLunch at Kemal Kochak Restaurant Kayseri',
-    'Departure Flight PC 2737 ASR-IST (Sabia Airport)',
+    'Departure Flight PC 2737 ASR-IST (Sabiha Airport)',
     'Departure Flight TK 2013 ASR-IST',
     'Arrival By PC 2737 (Karachi|Hyderabad|Sukkur|Quetta|Rawalpindi|Peshawar)',
     'Arrival By TK 2013 ( Lahore |Sahiwal|Multan |Faisalabad)\n\nMeet & Assist at Airport & Transfer to Intercontinental Hotel\n\nCheck Inn Formalities',
-    'Transfer for Dinner at Alladin Restaurant With Entertainment\n\nTransfer Back to Hotel / Drop at Taksim\n\nOver Night at Hotel',
+    'Transfer for Dinner at Alladin Restaurant With Entertainment\n\nTransfer Back to Hotel / Drop at Taksim\n\nOvernight at Hotel',
   ];
   final List<String> _hrs = [
     '1100Hrs',
-    '1610 hrs ',
+    '1610Hrs ',
     '1655Hrs',
     '1735Hrs',
     '1820Hrs',

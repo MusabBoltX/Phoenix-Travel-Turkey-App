@@ -6,6 +6,7 @@ class HotelDetailsCard extends StatelessWidget {
   final String hotelName;
   final String phoneNumber;
   final String address;
+  final String dateRange;
 
   const HotelDetailsCard({
     Key? key,
@@ -13,6 +14,7 @@ class HotelDetailsCard extends StatelessWidget {
     required this.phoneNumber,
     required this.address,
     required this.hotelName,
+    required this.dateRange,
   }) : super(key: key);
 
   @override
@@ -46,6 +48,21 @@ class HotelDetailsCard extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   // textBaseline: TextBaseline.alphabetic,
                   children: [
+
+                    /// dateRange
+                    Flexible(
+                      child: Text(
+                        dateRange,
+                        // textAlign: TextAlign.center,
+                        overflow: TextOverflow.visible,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: basePurpleDark,
+                          // fontSize: 16,
+                        ),
+                      ),
+                    ),
+
                     Text(
                       hotelName,
                       // textAlign: TextAlign.center,

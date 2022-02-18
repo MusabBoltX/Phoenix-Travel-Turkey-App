@@ -37,6 +37,7 @@ class _Day6ScreenState extends State<Day6Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -52,6 +53,7 @@ class _Day6ScreenState extends State<Day6Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -83,19 +85,21 @@ class _Day6ScreenState extends State<Day6Screen> {
   }
 
   final List<String> _details = [
-    'Breakfast at Hotel\n\nTransfer to Sogut\n\nVisit the Famous Ertugul Ghazi Tomb & Mosque & Adabali tomb & Turgut tomb & Inegol City & Bilecik City  ',
-    'Tranfer Sogut city visit Ertugrul ghazi Tomb and Mosque',
-    'Lunch at Sofra Restaurant.',
-    'Transfer Back to Istanbul',
+    'Breakfast at Hotel',
+    'Transfer to Sogut\n\nVisit the Famous Ertugul Ghazi Tomb & Mosque & Adabali tomb & Turgut tomb & Inegol City & Bilecik City  ',
+    // 'Tranfer Sogut city visit Ertugrul ghazi Tomb and Mosque',
+    'Lunch at Sofrasi Restaurant',
+    // 'Transfer Back to Istanbul',
     'Adabali tomb & Turgut tomb & Inegol City & Bilecik City  ',
     'Transfer at Istanbul',
-    'Arrival at Istanbul\n\nEvening Transfer for Shopping With Dinner Allowance\n\nOver Night at Hotel ',
+    'Arrival at Istanbul\n\nEvening Transfer for Shopping With Dinner Allowance\n\nOvernight at Hotel ',
   ];
   final List<String> _hrs = [
+    '0700Hrs',
     '0900Hrs',
-    '1000Hrs',
+    // '1000Hrs',
     '1300Hrs',
-    '1500Hrs',
+    // '1500Hrs',
     '1400Hrs',
     '1700Hrs',
     '1900Hrs',

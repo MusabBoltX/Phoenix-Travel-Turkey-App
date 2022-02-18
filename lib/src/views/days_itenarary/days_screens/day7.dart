@@ -37,6 +37,7 @@ class _Day7ScreenState extends State<Day7Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -52,6 +53,7 @@ class _Day7ScreenState extends State<Day7Screen> {
                     overflow: TextOverflow.visible,
                     style: TextStyle(
                       color: basePurpleDark,
+                      fontWeight: FontWeight.w800,
                       // fontSize: 16,
                     ),
                   ),
@@ -83,12 +85,14 @@ class _Day7ScreenState extends State<Day7Screen> {
   }
 
   final List<String> _details = [
-    'Breakfast at Hotel\n\nDay Free For Shopping & Personal activities With Lunch Allowance',
+    'Breakfast at Hotel',
+    'Day Free For Shopping & Personal activities With Lunch Allowance',
     'Transfer to Pier For Bosphorus Dinner Cruise',
     'Bosphorus Dinner Cruise With Entertainment\n\nTransfer Back to Hotel',
   ];
 
   final List<String> _hrs = [
+    '0830Hrs',
     '1030Hrs',
     '2000Hrs',
     '2030-2330Hrs',
